@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JavaScript refresher</title>
+        <title >JavaScript refresher</title>
     </head>
     <script src="script.js"></script>
 <body>
-!input type="text">
+
 <h1 id="welcomeMessage">Welcome to the JavaScript Refresher page!</h1>
-<button onclick="myFunction(alert)">alert</button>
+<form onsubmit="return false;" src="script.js">
+    <!--label for="formName"></label><br-->
+    <input type="text" id="myForm" name="formName" ><br><!--put value="so and so" to set a default value. placeholder="Alert name" for placeholder text.-->
+    <input type="submit" onclick=getFormInput()> <!--getFormInput has to be assigned a funtion, it is not a defualt thing.-->
+</form>
 
 <p>Your tasks:
     <ul>
